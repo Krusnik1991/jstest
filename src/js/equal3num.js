@@ -8,7 +8,7 @@ setTimeout(function(){
     c = +c;
     
     if(a==b && a==c){
-        alert('all nums are same = '+ a + " " + "=" + b + " " + "=" + " " + c);
+        alert('all nums are same '+ a + " " + "=" + " " + b + " " + "=" + " " + c);
     }else{
         if(a > b){
         if(a == c){
