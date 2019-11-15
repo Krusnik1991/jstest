@@ -8,7 +8,6 @@ const tab = document.querySelectorAll('.tab-wrap li a');
 function tabs(){
     var e = e || event;
     e.preventDefault();
-    console.log(this);
     var tabCollection = document.getElementsByClassName('tab');
     for(var i = 0; i < tabCollection.length; i++){
         tabCollection[i].classList.remove('active');
@@ -16,8 +15,8 @@ function tabs(){
     for(var k = 0; k < tab.length; k++){
         tab[k].classList.remove('active');
     }
-    this.classList.add('active');
-    document.getElementById(this.getAttribute('href')).classList.add("active");    
+    this.classList.add('active');  
+    document.getElementById(this.getAttribute('href').replace(/^#/, '')).classList.add("active");
 }
 
 
