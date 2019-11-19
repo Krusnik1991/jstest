@@ -11,11 +11,14 @@ function generatePassword(){
 
 function replaceSymbol(){
     var str = this.value;
-    origPass = origPass + str.charAt(str.length-1);
+    console.log('str before',str);
+    origPass = origPass + str.slice(-1);
+    console.log('str slice - 1', str.slice(-1));
+    console.log('origPass',origPass);
     str = str.slice(0, -1);
+    console.log('str after',str);
     var n = getRandomNum(0, passwordParts.length-1);
     this.value = str + passwordParts[n];
-    console.log(origPass);
 }
 
 var origPass = '';
