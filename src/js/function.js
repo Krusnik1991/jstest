@@ -1,23 +1,23 @@
-function Student(n, a){
-  this.name = n;
-  this.age = a;
-  var CONST = 80;
-
-  this.sayHello = function(){
-    alert('Hello from '+this.name)
-  }
-
-  this.getAge = function(){
-    console.log(calc());
-  }
-
-  var self = this;
-  var calc = function(){
-    return CONST - self.age;
+const person1 = {
+  name: 'Алексей',
+  family: 'Данчин',
+  sayHello(){
+    console.log(`Привет! Я ${this.name} ${this.family}`)
   }
 }
 
-var s = new Student('Alex', 25);
-var s1 = new Student('Nigger', 36);
+const person2 = {
+  name: 'Юрий',
+  family: 'Ключевский'
+}
 
-s.getAge()
+
+// sayHello.bind(person1)();
+// sayHello.bind(person2)();
+
+const func = sayHello.bind(person1);
+func();
+
+function sayHello(){
+  console.log(`Всем привет! Меня зовут ${this.name} ${this.family}.`);
+}
