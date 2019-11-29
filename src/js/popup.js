@@ -38,22 +38,22 @@ function Popup(options){
   this.init();
 }
 
-document.getElementsByClassName('.btn-container').addEventListener(click, new Popup);
+// document.getElementsByClassName('.btn-container').addEventListener(click, new Popup);
 
-// new Popup({
-//   node: document.getElementsByTagName('div')[1],
-//   content: 'This is a tip',
-//   position: 'bottom'
-// })
+new Popup({
+  node: document.getElementsByTagName('div')[1],
+  content: 'This is a tip',
+  position: 'bottom'
+})
 
-// new Popup({
-//   node: document.getElementsByTagName('h2')[0],
-//   content: 'This is a tip',
-//   position: 'left'
-// })
+new Popup({
+  node: document.getElementsByTagName('h2')[0],
+  content: 'This is a tip',
+  position: 'left'
+})
 
-// new Popup({
-//   node: document.getElementsByTagName('button')[0],
-//   content: 'This is a tip',
-//   position: 'right'
-// })
+new Popup({
+  node: document.getElementsByTagName('button')[0],
+  content: 'This is a tip',
+  position: 'right'
+})
