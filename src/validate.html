@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/validate.css">
+  <title>yeoman</title>
+</head>
+<body>
+<form>
+  <input type="text" name="email" placeholder="email" data-rule="required email" />
+  <input type="text" name="phone" placeholder="+28(254)00-00-000" data-rule="required phone" />
+  <input type="text" name="password" placeholder="password" data-rule="required password" />
+  <input type="checkbox" name="agree" data-rule="required" />
+  <select name="city" data-rule="required">
+    <option selected disabled>Select your city</option>
+    <option value="1">Kiev</option>
+    <option value="2">Kharkov</option>
+
+  </select>
+  <button>Submit</button>
+  <textarea name="message" data-rule="required max" data-max="45"></textarea>
+</form>
+
+<script src="js/validate.js"></script>
+</body>
+</html>
