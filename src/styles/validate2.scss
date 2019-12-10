@@ -1,0 +1,22 @@
+.input {
+    &.error{
+        .field{
+            border: 1px solid red;
+        }
+        .message {
+            color: red;
+        }
+    }
+    &.success{
+        .field{
+            border: 1px solid green;
+        }
+        .message {
+            color: green;
+        }
+    }
+}
+
+.btn{
+    margin: 10px 0;
+}
